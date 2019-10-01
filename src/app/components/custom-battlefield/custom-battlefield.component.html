@@ -1,0 +1,279 @@
+<div>
+    <div id="ships">
+        <span class="panel">
+            <img src="assets/images/four-decker.png" alt="Four-deckers:">
+            <span *ngIf="playerCustomShips['4'] !== 1"> {{playerCustomShips['4']}} </span>
+            <img class="v" *ngIf="playerCustomShips['4'] === 1" src="assets/images/check.png">
+        </span>
+        <span class="panel">
+            <img src="assets/images/three-decker.png" alt="Three-deckers:">
+            <span *ngIf="playerCustomShips['3'] !== 2" > {{playerCustomShips['3']}} </span>
+            <img class="v" *ngIf="playerCustomShips['3'] === 2" src="assets/images/check.png">
+        </span>
+        <span class="panel">
+            <img src="assets/images/two-decker.png" alt="Two-deckers:">
+            <span *ngIf="playerCustomShips['2'] !== 3"> {{playerCustomShips['2']}} </span>
+            <img class="v" *ngIf="playerCustomShips['2'] === 3" src="assets/images/check.png">
+        </span>
+        <span class="panel">
+            <img src="assets/images/one-decker.png" alt="one-deckers:">
+            <span *ngIf="playerCustomShips['1'] !== 4"> {{playerCustomShips['1']}} </span>
+            <img class="v" *ngIf="playerCustomShips['1'] === 4" src="assets/images/check.png">
+        </span>
+    </div>
+
+    <table>
+        <tr>
+            <td></td>
+            <td class="cell-title">a</td>
+            <td class="cell-title">b</td>
+            <td class="cell-title">c</td>
+            <td class="cell-title">d</td>
+            <td class="cell-title">e</td>
+            <td class="cell-title">f</td>
+            <td class="cell-title">g</td>
+            <td class="cell-title">h</td>
+            <td class="cell-title">i</td>
+            <td class="cell-title">j</td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a1']['image']}}"></td>
+            <td id="b1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b1']['image']}}"></td>
+            <td id="c1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c1']['image']}}"></td>
+            <td id="d1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d1']['image']}}"></td>
+            <td id="e1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e1']['image']}}"></td>
+            <td id="f1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f1']['image']}}"></td>
+            <td id="g1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g1']['image']}}"></td>
+            <td id="h1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h1']['image']}}"></td>
+            <td id="i1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i1']['image']}}"></td>
+            <td id="j1" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j1']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a2']['image']}}"></td>
+            <td id="b2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b2']['image']}}"></td>
+            <td id="c2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c2']['image']}}"></td>
+            <td id="d2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d2']['image']}}"></td>
+            <td id="e2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e2']['image']}}"></td>
+            <td id="f2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f2']['image']}}"></td>
+            <td id="g2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g2']['image']}}"></td>
+            <td id="h2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h2']['image']}}"></td>
+            <td id="i2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i2']['image']}}"></td>
+            <td id="j2" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j2']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a3']['image']}}"></td>
+            <td id="b3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b3']['image']}}"></td>
+            <td id="c3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c3']['image']}}"></td>
+            <td id="d3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d3']['image']}}"></td>
+            <td id="e3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e3']['image']}}"></td>
+            <td id="f3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f3']['image']}}"></td>
+            <td id="g3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g3']['image']}}"></td>
+            <td id="h3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h3']['image']}}"></td>
+            <td id="i3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i3']['image']}}"></td>
+            <td id="j3" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j3']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a4']['image']}}"></td>
+            <td id="b4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b4']['image']}}"></td>
+            <td id="c4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c4']['image']}}"></td>
+            <td id="d4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d4']['image']}}"></td>
+            <td id="e4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e4']['image']}}"></td>
+            <td id="f4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f4']['image']}}"></td>
+            <td id="g4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g4']['image']}}"></td>
+            <td id="h4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h4']['image']}}"></td>
+            <td id="i4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i4']['image']}}"></td>
+            <td id="j4" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j4']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a5']['image']}}"></td>
+            <td id="b5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b5']['image']}}"></td>
+            <td id="c5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c5']['image']}}"></td>
+            <td id="d5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d5']['image']}}"></td>
+            <td id="e5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e5']['image']}}"></td>
+            <td id="f5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f5']['image']}}"></td>
+            <td id="g5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g5']['image']}}"></td>
+            <td id="h5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h5']['image']}}"></td>
+            <td id="i5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i5']['image']}}"></td>
+            <td id="j5" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j5']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a6']['image']}}"></td>
+            <td id="b6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b6']['image']}}"></td>
+            <td id="c6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c6']['image']}}"></td>
+            <td id="d6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d6']['image']}}"></td>
+            <td id="e6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e6']['image']}}"></td>
+            <td id="f6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f6']['image']}}"></td>
+            <td id="g6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g6']['image']}}"></td>
+            <td id="h6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h6']['image']}}"></td>
+            <td id="i6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i6']['image']}}"></td>
+            <td id="j6" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j6']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a7']['image']}}"></td>
+            <td id="b7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b7']['image']}}"></td>
+            <td id="c7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c7']['image']}}"></td>
+            <td id="d7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d7']['image']}}"></td>
+            <td id="e7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e7']['image']}}"></td>
+            <td id="f7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f7']['image']}}"></td>
+            <td id="g7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g7']['image']}}"></td>
+            <td id="h7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h7']['image']}}"></td>
+            <td id="i7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i7']['image']}}"></td>
+            <td id="j7" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j7']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a8']['image']}}"></td>
+            <td id="b8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b8']['image']}}"></td>
+            <td id="c8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c8']['image']}}"></td>
+            <td id="d8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d8']['image']}}"></td>
+            <td id="e8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e8']['image']}}"></td>
+            <td id="f8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f8']['image']}}"></td>
+            <td id="g8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g8']['image']}}"></td>
+            <td id="h8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h8']['image']}}"></td>
+            <td id="i8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i8']['image']}}"></td>
+            <td id="j8" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j8']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;
+            </td>
+            <td id="a9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a9']['image']}}"></td>
+            <td id="b9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b9']['image']}}"></td>
+            <td id="c9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c9']['image']}}"></td>
+            <td id="d9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d9']['image']}}"></td>
+            <td id="e9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e9']['image']}}"></td>
+            <td id="f9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f9']['image']}}"></td>
+            <td id="g9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g9']['image']}}"></td>
+            <td id="h9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h9']['image']}}"></td>
+            <td id="i9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i9']['image']}}"></td>
+            <td id="j9" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j9']['image']}}"></td>
+        </tr>
+        <tr>
+            <td class="cell-title">&nbsp;10&nbsp;&nbsp;</td>
+            <td id="a10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['a10']['image']}}"></td>
+            <td id="b10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['b10']['image']}}"></td>
+            <td id="c10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['c10']['image']}}"></td>
+            <td id="d10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['d10']['image']}}"></td>
+            <td id="e10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['e10']['image']}}"></td>
+            <td id="f10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['f10']['image']}}"></td>
+            <td id="g10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['g10']['image']}}"></td>
+            <td id="h10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['h10']['image']}}"></td>
+            <td id="i10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['i10']['image']}}"></td>
+            <td id="j10" class="cell">
+                <img (click)="onCellClick($event)" src="assets/images/{{this.playerCustomMap['j10']['image']}}"></td>
+        </tr>
+    </table>
+</div>

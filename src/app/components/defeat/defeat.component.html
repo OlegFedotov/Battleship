@@ -1,0 +1,6 @@
+<div>
+    <img src="assets/images/defeat.png" alt="Defeat!">
+    <p [class.first-warning]="messageCounter===1" [class.second-warning]="messageCounter===2">{{ message }}</p>
+    <button (click)="playAgain()" class="btn btn-primary">Play again</button>
+    <button (click)="quitGame()" class="btn btn-secondary">Quit</button>
+</div>

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-sm-6 enemy-area">
+        <h3 [class.selected]="turn === 'Player'">Player</h3>
+        <div class="field">
+            <app-battleship (clicked)="fieldClick($event)" [turn]="turn" [tag]="'Player'"></app-battleship>
+        </div>
+    </div>
+    <div class="col-sm-6 player-area">
+        <h3 [class.selected]="turn === 'Enemy'">Enemy</h3>
+        <div class="field">
+            <app-battleship (clicked)="fieldClick($event)" [turn]="turn" [tag]="'Enemy'"></app-battleship>
+        </div>
+    </div>
+</div>

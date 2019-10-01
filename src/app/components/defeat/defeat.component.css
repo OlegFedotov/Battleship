@@ -1,0 +1,26 @@
+img {    
+    width: 450px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+
+}
+
+div {
+   text-align: center; 
+}
+
+button {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.first-warning {
+    font-weight: bold;
+}
+
+.second-warning {
+    font-weight: bolder;
+    font-size: 120%;
+    color: rgb(66, 212, 66);
+}
+

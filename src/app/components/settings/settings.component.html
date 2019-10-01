@@ -1,0 +1,74 @@
+<div>
+    <form #form="ngForm" (ngSubmit)="onSubmit(form)">
+        <div class="form-group">
+            <br>
+            <div id="ArrangementOptions">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th><label for="ArrangementOptions">Ship Arrangement:</label></th>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="RandomOption" name="Random" value="random"
+                                [(ngModel)]="userSettings.ShipArrangement" #RandomField="ngModel"></td>
+                        <td><label for="RandomOption">&nbsp;Generate random ships</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio" id="CusomOption" name="Random" value="custom"
+                                [(ngModel)]="userSettings.ShipArrangement" #RandomField="ngModel"></td>
+                        <td><label for="CusomOption">&nbsp;Let me arrange ships myself</label></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div [hidden]="userSettings.ShipArrangement === 'random'">
+            <table>
+                <tr>
+                    <th>Type of ship</th>
+                    <th></th>
+                    <th>Size (squares)</th>
+                    <th>Required number (ships)</th>
+                </tr>
+                <tr>
+                    <td>Four-Decker</td>
+                    <td><img src="assets/images/four-decker.png" width="20"></td>
+                    <td>4</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>Three-Decker</td>
+                    <td><img src="assets/images/three-decker.png" width="20"></td>
+                    <td>3</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>Two-Decker</td>
+                    <td><img src="assets/images/two-decker.png" width="20"></td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>One-Decker</td>
+                    <td><img src="assets/images/one-decker.png" width="20"></td>
+                    <td>1</td>
+                    <td>4</td>
+                </tr>
+            </table>
+            <br>
+            <hr><br>
+            <app-custom-battlefield (validate)="validatePlayerCustomArrangement($event)"></app-custom-battlefield>
+        </div>
+
+        <br>
+        <div class="button">
+            <button
+                *ngIf="userSettings.ShipArrangement === 'random' || userSettings.ShipArrangement === 'custom' && isPlayerChoiceValid"
+                class="btn btn-primary">Start</button>
+            &nbsp;
+            <button *ngIf="userSettings.ShipArrangement === 'custom'" type="button" (click)="Reset($event)"
+                class="btn btn-danger">Reset</button>
+        </div>
+    </form>
+
+</div>

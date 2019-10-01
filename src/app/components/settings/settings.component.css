@@ -1,0 +1,29 @@
+.button {
+text-align: center;
+margin-left: 25px;
+}
+
+
+table, th, td {
+    text-align: center;
+    border: 4px solid white; 
+    border-radius: 10px;
+    margin: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: rgb(163, 194, 252);
+}
+
+td{
+    background-color: aliceblue; 
+}
+
+td:nth-child(1){
+    background-color: rgb(223, 234, 255);
+}
+

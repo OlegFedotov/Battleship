@@ -1,0 +1,26 @@
+<div>
+    <table>
+        <tr>
+            <td *ngFor="let i of battleStatsArrays['four-deckers']">
+                <img *ngIf="!i" class="four-deckers" src="assets/images/four-decker.png">
+                <img *ngIf="i" class="four-deckers defeated" src="assets/images/defeated-ship-icon.png">
+            </td>
+            <td *ngFor="let i of battleStatsArrays['three-deckers']">
+                <img *ngIf="!i" class="three-deckers" src="assets/images/three-decker.png">
+                <img *ngIf="i" class="three-deckers defeated" src="assets/images/defeated-ship-icon.png">
+
+            </td>
+            <td *ngFor="let i of battleStatsArrays['two-deckers']">
+                <img *ngIf="!i" class="two-deckers" src="assets/images/two-decker.png">
+                <img *ngIf="i" class="two-deckers defeated" src="assets/images/defeated-ship-icon.png">
+
+            </td>
+            <td *ngFor="let i of battleStatsArrays['one-deckers']">
+                <img *ngIf="!i" class="one-deckers" src="assets/images/one-decker.png">
+                <img *ngIf="i" class="one-deckers defeated" src="assets/images/defeated-ship-icon.png">
+
+            </td>
+
+        </tr>
+    </table>
+</div>

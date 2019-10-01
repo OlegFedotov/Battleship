@@ -1,0 +1,249 @@
+<div [class.inactive]='turn === tag'>    
+    <app-battlestate [battleStatsArrays]="battleStatsArrays"></app-battlestate>
+    
+    <table >
+        <tr>
+            <td></td>
+            <td [class.cell-title-active]="status.map['a']['active']" class="cell-title">a</td>
+            <td [class.cell-title-active]="status.map['b']['active']" class="cell-title">b</td>
+            <td [class.cell-title-active]="status.map['c']['active']" class="cell-title">c</td>
+            <td [class.cell-title-active]="status.map['d']['active']" class="cell-title">d</td>
+            <td [class.cell-title-active]="status.map['e']['active']" class="cell-title">e</td>
+            <td [class.cell-title-active]="status.map['f']['active']" class="cell-title">f</td>
+            <td [class.cell-title-active]="status.map['g']['active']" class="cell-title">g</td>
+            <td [class.cell-title-active]="status.map['h']['active']" class="cell-title">h</td>
+            <td [class.cell-title-active]="status.map['i']['active']" class="cell-title">i</td>
+            <td [class.cell-title-active]="status.map['j']['active']" class="cell-title">j</td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['1']['active']" class="cell-title">&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;</td>
+            <td id="a1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a1['cell-image']}}"></td>
+            <td id="b1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b1['cell-image']}}"></td>
+            <td id="c1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c1['cell-image']}}"></td>
+            <td id="d1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d1['cell-image']}}"></td>
+            <td id="e1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e1['cell-image']}}"></td>
+            <td id="f1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f1['cell-image']}}"></td>
+            <td id="g1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g1['cell-image']}}"></td>
+            <td id="h1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h1['cell-image']}}"></td>
+            <td id="i1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i1['cell-image']}}"></td>
+            <td id="j1" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j1['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['2']['active']" class="cell-title">&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;</td>
+            <td id="a2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a2['cell-image']}}"></td>
+            <td id="b2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b2['cell-image']}}"></td>
+            <td id="c2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c2['cell-image']}}"></td>
+            <td id="d2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d2['cell-image']}}"></td>
+            <td id="e2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e2['cell-image']}}"></td>
+            <td id="f2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f2['cell-image']}}"></td>
+            <td id="g2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g2['cell-image']}}"></td>
+            <td id="h2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h2['cell-image']}}"></td>
+            <td id="i2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i2['cell-image']}}"></td>
+            <td id="j2" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j2['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['3']['active']" class="cell-title">&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;</td>
+            <td id="a3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a3['cell-image']}}"></td>
+            <td id="b3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b3['cell-image']}}"></td>
+            <td id="c3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c3['cell-image']}}"></td>
+            <td id="d3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d3['cell-image']}}"></td>
+            <td id="e3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e3['cell-image']}}"></td>
+            <td id="f3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f3['cell-image']}}"></td>
+            <td id="g3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g3['cell-image']}}"></td>
+            <td id="h3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h3['cell-image']}}"></td>
+            <td id="i3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i3['cell-image']}}"></td>
+            <td id="j3" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j3['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['4']['active']" class="cell-title">&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;</td>
+            <td id="a4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a4['cell-image']}}"></td>
+            <td id="b4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b4['cell-image']}}"></td>
+            <td id="c4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c4['cell-image']}}"></td>
+            <td id="d4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d4['cell-image']}}"></td>
+            <td id="e4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e4['cell-image']}}"></td>
+            <td id="f4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f4['cell-image']}}"></td>
+            <td id="g4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g4['cell-image']}}"></td>
+            <td id="h4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h4['cell-image']}}"></td>
+            <td id="i4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i4['cell-image']}}"></td>
+            <td id="j4" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j4['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['5']['active']" class="cell-title">&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;</td>
+            <td id="a5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a5['cell-image']}}"></td>
+            <td id="b5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b5['cell-image']}}"></td>
+            <td id="c5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c5['cell-image']}}"></td>
+            <td id="d5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d5['cell-image']}}"></td>
+            <td id="e5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e5['cell-image']}}"></td>
+            <td id="f5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f5['cell-image']}}"></td>
+            <td id="g5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g5['cell-image']}}"></td>
+            <td id="h5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h5['cell-image']}}"></td>
+            <td id="i5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i5['cell-image']}}"></td>
+            <td id="j5" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j5['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['6']['active']" class="cell-title">&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;</td>
+            <td id="a6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a6['cell-image']}}"></td>
+            <td id="b6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b6['cell-image']}}"></td>
+            <td id="c6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c6['cell-image']}}"></td>
+            <td id="d6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d6['cell-image']}}"></td>
+            <td id="e6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e6['cell-image']}}"></td>
+            <td id="f6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f6['cell-image']}}"></td>
+            <td id="g6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g6['cell-image']}}"></td>
+            <td id="h6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h6['cell-image']}}"></td>
+            <td id="i6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i6['cell-image']}}"></td>
+            <td id="j6" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j6['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['7']['active']" class="cell-title">&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;</td>
+            <td id="a7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a7['cell-image']}}"></td>
+            <td id="b7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b7['cell-image']}}"></td>
+            <td id="c7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c7['cell-image']}}"></td>
+            <td id="d7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d7['cell-image']}}"></td>
+            <td id="e7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e7['cell-image']}}"></td>
+            <td id="f7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f7['cell-image']}}"></td>
+            <td id="g7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g7['cell-image']}}"></td>
+            <td id="h7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h7['cell-image']}}"></td>
+            <td id="i7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i7['cell-image']}}"></td>
+            <td id="j7" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j7['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['8']['active']" class="cell-title">&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;</td>
+            <td id="a8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a8['cell-image']}}"></td>
+            <td id="b8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b8['cell-image']}}"></td>
+            <td id="c8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c8['cell-image']}}"></td>
+            <td id="d8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d8['cell-image']}}"></td>
+            <td id="e8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e8['cell-image']}}"></td>
+            <td id="f8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f8['cell-image']}}"></td>
+            <td id="g8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g8['cell-image']}}"></td>
+            <td id="h8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h8['cell-image']}}"></td>
+            <td id="i8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i8['cell-image']}}"></td>
+            <td id="j8" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j8['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['9']['active']" class="cell-title">&nbsp;&nbsp;9&nbsp;&nbsp;&nbsp;</td>
+            <td id="a9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a9['cell-image']}}"></td>
+            <td id="b9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b9['cell-image']}}"></td>
+            <td id="c9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c9['cell-image']}}"></td>
+            <td id="d9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d9['cell-image']}}"></td>
+            <td id="e9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e9['cell-image']}}"></td>
+            <td id="f9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f9['cell-image']}}"></td>
+            <td id="g9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g9['cell-image']}}"></td>
+            <td id="h9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h9['cell-image']}}"></td>
+            <td id="i9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i9['cell-image']}}"></td>
+            <td id="j9" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j9['cell-image']}}"></td>
+        </tr>
+        <tr>
+            <td [class.cell-title-active]="status.map['10']['active']" class="cell-title">&nbsp;10&nbsp;&nbsp;</td>
+            <td id="a10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.a10['cell-image']}}"></td>
+            <td id="b10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.b10['cell-image']}}"></td>
+            <td id="c10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.c10['cell-image']}}"></td>
+            <td id="d10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.d10['cell-image']}}"></td>
+            <td id="e10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.e10['cell-image']}}"></td>
+            <td id="f10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.f10['cell-image']}}"></td>
+            <td id="g10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.g10['cell-image']}}"></td>
+            <td id="h10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.h10['cell-image']}}"></td>
+            <td id="i10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.i10['cell-image']}}"></td>
+            <td id="j10" (mouseenter)="onCellHover($event)" (mouseleave)="onCellLeave($event)" (click)="onCellClick($event)" class="cell">
+                <img src="assets/images/{{status.map.j10['cell-image']}}"></td>
+        </tr>
+    </table>
+</div>

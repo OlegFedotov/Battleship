@@ -1,0 +1,26 @@
+div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+table {
+    margin: auto;
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.defeated {
+    opacity: 0.2;
+    transition: opacity linear 2s;
+}
+
+
+

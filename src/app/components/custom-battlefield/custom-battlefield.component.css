@@ -1,0 +1,74 @@
+table {
+    margin: auto;
+}
+
+div {
+    font-weight: bold;
+    color: rgb(94, 94, 94)
+}
+
+.cell{
+    background-color: rgb(0, 0, 0);
+    border: 1px inset black;
+    text-align: center;
+    margin:0;
+    padding:0;    
+}
+
+.cell-title {
+    text-align: center; 
+    margin:0;
+    padding:0; 
+    padding-bottom: 4px;  
+}
+
+.cell-title-active {
+    font-weight: bold;
+    color: white;    
+    background-color: red; 
+    margin:0;
+    padding:0;   
+
+}
+
+.cell:hover {
+    margin:0;
+    padding:0;    
+    opacity: .9;
+    filter: drop-shadow(0 0 2px red);
+    cursor: pointer;
+    border: 1px solid red;
+}
+
+img {
+    width: 32px;
+    height: 32px;
+    transition: src 5s ease-in-out;   
+}
+
+.v {
+    width: 20px;
+    height:20px;
+    margin-left: 6px;
+    
+}
+
+#ships {
+    text-align: center;
+    margin-left: 18px; 
+    margin-bottom: 10px;   
+}
+
+#ships .panel {
+    padding: 12px;
+    border: 2px solid rgb(158, 158, 158);
+    border-radius: 30px; 
+    margin: 5px;
+    padding-bottom: 15px;
+}
+
+.inactive {
+    opacity: 0.2;
+    transition: opacity .4s ease .2s;
+}
+

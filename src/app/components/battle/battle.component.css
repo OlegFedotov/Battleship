@@ -1,0 +1,23 @@
+h1,h2,h3 {
+    text-align: center;
+}
+
+h3 {
+    background-color: rgb(232, 234, 235);
+    border-radius:  30px;
+    margin-top: 10px;
+    padding-bottom: 5px;
+}
+
+.field {
+    margin-right: 25px;
+}
+
+.selected {
+    background-color: rgb(148, 241, 136);
+    border-radius:  30px;
+    margin-top: 10px;
+    transition: background-color .4s ease-out .4s;
+}
+
+
