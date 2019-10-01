@@ -2,10 +2,15 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
-## Running the project
+## Try the app 
 
-- run npm install command to install node modules from package.json
-- run ng serve -o to open the application
+[You can checkout the project here](https://olegfedotov.github.io/Battleship/)
+
+## Download and run project yourself
+
+- run **git clone https://github.com/OlegFedotov/Battleship.git** to clone the app to your computer
+- run **npm install** command to install node modules from package.json
+- run **ng serve -o** to open the application
 
 ## Development server
 
